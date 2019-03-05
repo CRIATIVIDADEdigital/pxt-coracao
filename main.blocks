@@ -1,13 +1,28 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables></variables>
-  <block type="device_forever" x="20" y="20">
+  <block type="device_forever" x="0" y="0">
     <statement name="HANDLER">
-      <block type="device_print_message">
-        <value name="text">
-          <shadow type="text">
-            <field name="TEXT">Hello!</field>
-          </shadow>
-        </value>
+      <block type="device_show_leds">
+        <field name="LEDS">`
+        . # . # . 
+        # # # # # 
+        # # # # # 
+        . # # # . 
+        . . # . .
+        `
+        </field>
+        <next>
+          <block type="device_show_leds">
+            <field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `
+            </field>
+          </block>
+        </next>
       </block>
     </statement>
   </block>
