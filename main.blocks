@@ -4,11 +4,11 @@
     <statement name="HANDLER">
       <block type="device_show_leds">
         <field name="LEDS">`
-        . . . . . 
         . # . # . 
-        . . . . . 
+        # # # # # 
+        # # # # # 
         . # # # . 
-        # . . . #
+        . . # . .
         `
         </field>
         <next>
@@ -25,8 +25,5 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block type="basic_show_icon" disabled="true" x="559" y="239">
-    <field name="i">IconNames.Sad</field>
   </block>
 </xml>

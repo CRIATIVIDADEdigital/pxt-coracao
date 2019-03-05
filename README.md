@@ -48,3 +48,20 @@ basic.forever(function() {
         . . . . .`);
 })
 ```
+
+```blocks
+basic.forever(function() {
+    basic.showLeds(`
+        . # # # .
+        # . # . #
+        # # # # #
+        . # # # .
+        . # # # .`);
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .`);
+})
+```
