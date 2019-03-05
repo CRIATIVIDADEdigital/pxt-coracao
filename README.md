@@ -30,3 +30,11 @@ basic.forever(function() {
 ```
 
 ## Passo 3 @fullscreen
+Experimente outras imagens:
+``||basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . # # # .
+        # . . . #`)
+``
