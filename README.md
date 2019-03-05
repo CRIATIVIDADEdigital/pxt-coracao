@@ -1,26 +1,25 @@
-# Flashing Heart - Teste
+# Coração piscando
 
-## Introduction / Introdução @unplugged
+## Introdução @unplugged
 
-Learn/aprenda how to use the LEDs and make a flashing heart! 
-(Want to learn how lights work? [Watch this video](https://youtu.be/qqBmvHD5bCw)).
+Aprenda como fazer o painel de LEDs do Micro:bit piscar emojis.
 
-## Step 1 @fullscreen
+## Passo 1 @fullscreen
 
-Place the ``||basic:show leds||`` block in the ``||basic:forever||`` block and draw a heart.
+Para ativar os leds do Micro:bit utizamos o bloco ``||basic:mostrar leds||`` no loop ``||basic:sempre||``.
 
-## Step 2 @fullscreen
+## Passo 2 @fullscreen
 
-Place another ``||basic:show leds||`` block. You can leave it blank and draw what you want.
+Clique nas posições do ``||basic:mostrar leds||`` para ligar/desligar os LEDs do painel do Micro:bit. Para fazer piscar um *smile* configure o bloco ``||basic:mostrar LEDs||`` como indicado abaixo.
 
 ```blocks
 basic.forever(function() {
     basic.showLeds(`
+        . . . . .
         . # . # .
-        # # # # #
-        # # # # #
-        . # # # .
-        . . # . .`);
+        . . . . .
+        # . . . #
+        . # # # .`);
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -30,10 +29,22 @@ basic.forever(function() {
 })
 ```
 
-## Step 3 @fullscreen
+## Passo 3 @fullscreen
 
-Look at the virtual @boardname@, you should see the heart and your drawing blink on the screen.
-
-## Step 4 @fullscreen
-
-If you have a @boardname@ connected, click ``|Download|`` to transfer your code and watch the hearts flash!
+Experimente outras imagens:
+```blocks
+basic.forever(function() {
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . # # # .
+        # . . . #`);
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .`);
+})
+```
