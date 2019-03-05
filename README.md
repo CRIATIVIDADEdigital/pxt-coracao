@@ -30,21 +30,3 @@ basic.forever(function() {
 ```
 
 ## Passo 3 @fullscreen
-
-Experimente outras imagens:
-```blocks
-basic.forever(function() {
-    basic.showLeds(`
-        . . . . .
-        . # . # .
-        . . . . .
-        . # # # .
-        # . . . #`);
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .`);
-})
-```
