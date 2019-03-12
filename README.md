@@ -89,7 +89,7 @@ Uma "seta para a direita":
         . . . . .`);
 ```
 
-## Criando uma imagem surpresa
+## Gerando uma imagem surpresa
 Podemos usar os recursos do Micro:bit para fazer uma brincadeira em que, ao sacudi-lo, 
 o Micro:bit apresenta automaticamente uma imagem diferente.
 
@@ -102,8 +102,7 @@ e depois o ```||math:escolher aleatório||``` para sortear qual imagem vai ser a
 
 Acompanhe os passos abaixo.
 
-
-
+Primeiro vamos construir o trecho do programa que vai controlar o processo de sorteio da imagem.
 1. Coloque o bloco ```||input:em agitar||``` na área de programação. Ele está disponível no grupo ```||input:Entrada||```.
 1. Crie uma variável chamada ```||variable:imagem sorteada||```. Você faz isso por meio do grupo ```||variable:Variáveis||```.
 1. Ainda usando o grupo ```||variable:Variáveis||``` arraste para dentro do ```||input:em agitar||``` o bloco ```||variable:definir imagem sorteada para||```.
@@ -116,7 +115,7 @@ Acompanhe os passos abaixo.
     let imagem_sorteada = Math.randomRange(1, 3)
 })
 ```
-1. Agora que já temos a imagem escolhida guardada na variável ```||variable:imagem sorteada||```,
+Agora que já temos a imagem escolhida guardada na variável ```||variable:imagem sorteada||```,
 vamos utilizar o valor escolhido (ou sorteado) para definir qual imagem o Micro:bit deverá apresentar. 
 Usaremos o *loop* infinito ```||basic:sempre||``` para incluir a verificação de qual imagem deve ser apresentada.
 1. Primeiro vamos retirar todos os blocos que estiverem dentro do ```||basic:sempre||``` para programarmos o controle do zero.
@@ -134,7 +133,7 @@ basic.forever(function () {
     }
 })
 ```
-1. Agora já temos tudo preparado para colocar as imagens que serão apresentadas de acordo com o número sorteado.
+Pronto! Já temos tudo preparado para colocar as imagens que serão apresentadas de acordo com o número sorteado. Então vamos lá...
 1. Altere o primeiro o ```||logic:se||``` para que tenha o valor ```||logic:1||```. 
 Dentro dele use o bloco ```||basic:mostrar leds||```, que fica no grupo ```||basic:Básico||```, para apresentar a imagem do coração. 
 Na sequência, ao final do bloco ```||logic:se||```, coloque um ```||basic:mostrar leds||``` para que o coração fique piscando.
@@ -160,3 +159,7 @@ basic.forever(function () {
         `)
 })
 ```
+Para acrescentar as próximas imagens vamos repetir o processo acima, ou seja, acrescentar um bloco ```||logic:se||``` para cada imagem. 
+Veja o resultado no trecho de código abaixo. Se for sorteado o número ```||logic:1||``` apresentamos um coração, 
+se for sorteado o número ```||logic:2||``` apresentamos um "sorriso". 
+Se for o número ```||logic:3||``` apresentamos uma "carinha triste".  
