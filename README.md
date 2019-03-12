@@ -81,10 +81,10 @@ Uma "caveira":
 
 Uma "seta para a direita":
 ```blocks
+   basic.showLeds(`
         . . . . .
         . . . # .
         # # # # #
         . . . # .
-        . . . . .
-        `);
+        . . . . .`);
 ```
