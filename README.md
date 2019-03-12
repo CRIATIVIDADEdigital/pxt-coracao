@@ -93,14 +93,15 @@ Uma "seta para a direita":
 Podemos usar os recursos do Micro:bit para fazer uma brincadeira em que, ao sacudi-lo, 
 o Micro:bit apresenta automaticamente uma imagem diferente.
 
-Para programar esta funcionalidade, vamos utilizar o *acelerometro* disponível no Micro:bit e que é capaz de medir um movimento aplicada à placa.  
+Para programar esta funcionalidade, vamos utilizar o *acelerometro* disponível no Micro:bit. 
+Ele é capaz de medir um movimento aplicada à placa.  
 
 Faremos isso usando dois blocos disponíveis para programação. Primeiro o ```||input:em agitar||```, 
-que identifica automaticamente que a placa do Micro:bit foi mofimentada, 
+que identifica automaticamente que a placa do Micro:bit foi movimentada, 
 e depois o ```||math:escolher aleatório||``` para sortear qual imagem vai ser apresenta. 
 
 Acompanhe os passos abaixo.
 1. Coloque o bloco ```||input:em agitar||``` na área de programação. Ele está disponível no grupo ```||input:Entrada||```.
 1. Crie uma variável chamada ```||variable:imagem sorteada||```. Você faz isso por meio do grupo ```||variable:Variáveis||```.
-1. Ainda usando o grupo ```||variable:Variáveis||``` arraste para dentro do ```||input:em agitar||``` o bloco ```||variable:definir imagem sorteada para||``.
-1. Vá até o grupo ```||math:Matemática||``` e arraste o bloco ```||math:escolher aleatório||``` em cima do número ```||math:0||``` presente na variável ```||variable:imagem sorteada||. 
+1. Ainda usando o grupo ```||variable:Variáveis||``` arraste para dentro do ```||input:em agitar||``` o bloco ```||variable:definir imagem sorteada para||```.
+1. Vá até o grupo ```||math:Matemática||``` e arraste o bloco ```||math:escolher aleatório||``` em cima do número ```||variable:0||``` presente na variável ```||variable:imagem sorteada||```. 
