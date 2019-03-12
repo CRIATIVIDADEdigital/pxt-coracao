@@ -102,11 +102,7 @@ e depois o ```||math:escolher aleatório||``` para sortear qual imagem vai ser a
 
 Acompanhe os passos abaixo.
 
-```blocks
-input.onGesture(Gesture.Shake, () => {
-    basic.showNumber(0)
-})
-```
+
 
 1. Coloque o bloco ```||input:em agitar||``` na área de programação. Ele está disponível no grupo ```||input:Entrada||```.
 1. Fazendo o sorteio da imagem
@@ -115,9 +111,11 @@ input.onGesture(Gesture.Shake, () => {
     1. Vá até o grupo ```||math:Matemática||``` e arraste o bloco ```||math:escolher aleatório||``` em cima do número ```||variable:0||``` presente na variável ```||variable:imagem sorteada||```.
     1. Altere os parâmetros para que seja sorteado um número de ```||math:1||``` até ```||math:3||```.
     1. O código vai ficar assim:
-
-
-
+```blocks
+    input.onGesture(Gesture.Shake, () => {
+    let imagem_sorteada = Math.randomRange(1, 3)
+})
+```
 1. Verificando o número sorteado para definir a imagem a ser apresentada.
    1. Agora que já temos a imagem escolhida guardado na variável ```||variable:imagem sorteada||```, 
    vamos utilizar o valor escolhido (ou sorteado) para definir qual imagem o Micro:bit deve apresentar. 
