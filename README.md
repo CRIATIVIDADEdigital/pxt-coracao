@@ -21,6 +21,27 @@ Veja abaixo.
 ```blocks
 basic.forever(function() {
     basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # #
+        . # # # .
+        . . # . .
+        `);
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .`);
+})
+```
+
+Para alterar a imagem apresentada na matriz de LEDs do Micro:bit, temos que alterar o conjunto de LEDs dentro do bloco ``||basic:mostrar leds||``.
+
+Por exemplo, experimente trocar o coração por um *smile*. 
+```blocks
+basic.forever(function() {
+    basic.showLeds(`
         . . . . .
         . # . # .
         . . . . .
@@ -34,43 +55,25 @@ basic.forever(function() {
         . . . . .`);
 })
 ```
+Após a alteração veja como ficou o jogo usando o simulador ou baixando a nova versão do código no seu Micro:bit.
 
-Para alterar a imagem apresentada na matriz de LEDs do Micro:bit temos que alterar o conjunto de LEDs dentro do bloco ``||basic:mostrar leds||``.
-Por exemplo, podemos trocar o coração por um *smile*. 
-
-## Passo 3 @fullscreen
-Experimente outras imagens:
-
+Agora, dê asas a sua imaginação.
+Você pode fazer uma carinha triste:
 ```blocks
-basic.forever(function() {
     basic.showLeds(`
         . . . . .
         . # . # .
-        . . . . .
+        . . . . . 
         . # # # .
         # . . . #`);
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .`);
-})
 ```
 
+Uma "caveira":
 ```blocks
-basic.forever(function() {
-    basic.showLeds(`
+   basic.showLeds(`
         . # # # .
         # . # . #
         # # # # #
         . # # # .
         . # # # .`);
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .`);
-})
 ```
