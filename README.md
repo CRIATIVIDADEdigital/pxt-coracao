@@ -1,16 +1,22 @@
 # Coração piscando
 
-## Introdução @unplugged
+## Introdução 
 
-Aprenda como fazer o painel de LEDs do Micro:bit piscar emojis.
+Este programa faz com que os LEDs do Micro:bit pisquem a forma de um coração.  
 
-## Passo 1 @fullscreen
+## Como funciona
+1. Baixe o programa no seu computador.
+1. Conecte o Micro:bit e transfira o arquivo HEX.
+1. Ao término da transferência, o programa iniciará automaticamente em seu Micro:bit.
 
-Para ativar os leds do Micro:bit utizamos o bloco ``||basic:mostrar leds||`` no loop ``||basic:sempre||``.
+## Sugestões de modificação
+Quer experimentar modificar este programa? Então, confira as sugestões apresentadas abaixo.
 
-## Passo 2 @fullscreen
+## Trocando o coração por um emoji
+O programa funciona por meio de um *loop* (ou repetição) infinito em que o bloco  ``||basic:mostrar leds||`` primeiro apresenta a imagem de um coração. 
+Em seguida ele é substituído por uma "imagem vazia". 
 
-Clique nas posições do ``||basic:mostrar leds||`` para ligar/desligar os LEDs do painel do Micro:bit. Para fazer piscar um *smile* configure o bloco ``||basic:mostrar LEDs||`` como indicado abaixo.
+Veja abaixo.
 
 ```blocks
 basic.forever(function() {
@@ -28,6 +34,9 @@ basic.forever(function() {
         . . . . .`);
 })
 ```
+
+Para alterar a imagem apresentada na matriz de LEDs do Micro:bit temos que alterar o conjunto de LEDs dentro do bloco ``||basic:mostrar leds||``.
+Por exemplo, podemos trocar o coração por um *smile*. 
 
 ## Passo 3 @fullscreen
 Experimente outras imagens:
