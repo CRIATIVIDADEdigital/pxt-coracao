@@ -103,9 +103,9 @@ e depois o ```||math:escolher aleatório||``` para sortear qual imagem vai ser a
 Acompanhe os passos abaixo.
 
 ```blocks
-input.onGesture(Gesture.Shake, function () {
-imagem_sorteada = Math.randomRange(1, 3)
-});
+input.onGesture(Gesture.Shake, () => {
+    basic.showNumber(0)
+})
 ```
 
 1. Coloque o bloco ```||input:em agitar||``` na área de programação. Ele está disponível no grupo ```||input:Entrada||```.
