@@ -118,17 +118,45 @@ Acompanhe os passos abaixo.
 ```
 1. Agora que já temos a imagem escolhida guardada na variável ```||variable:imagem sorteada||```,
 vamos utilizar o valor escolhido (ou sorteado) para definir qual imagem o Micro:bit deverá apresentar. 
-Isso será feito usando o bloco ```||logic:se verdadeiro então||``` e o de comparação ```||logic:0 = 0||```.  
-1. Vá até o grupo ```||logic:Lógica||``` e arraste o bloco ```||logic:se verdadeiro então||``` para que fique logo abaixo do bloco ```||variable:definir||```.
+Usaremos o *loop* infinito ```||basic:sempre||``` para incluir a verificação de qual imagem deve ser apresentada.
+1. Primeiro vamos retirar todos os blocos que estiverem dentro do ```||basic:sempre||``` para programarmos o controle do zero.
+1. Para controlar qual imagem será apresentada, utilizaremos o bloco condicional ```||logic:se verdadeiro então||``` e de comparação ```||logic:0 = 0||```.  
+1. Vá até o grupo ```||logic:Lógica||``` e arraste o bloco ```||logic:se verdadeiro então||``` para dentro do *loop* ```||basic:sempre||```.
 1. Ainda usando o grupo ```||logic:Lógica||``` arraste o bloco ```||logic:0 = 0||``` sobre o ```||logic:verdadeiro||```. 
 1. No grupo ```||variable:Variáveis||``` pegue o bloco ```||variable:imagem sorteada||``` e arraste sobre o primeiro ```||logic:0||``` do bloco ```||logic:se 0 = 0 então||```.
 1. O código vai ficar assim:
 
 ```blocks
-    input.onGesture(Gesture.Shake, () => {
-    let imagem_sorteada = Math.randomRange(1, 3)
+let imagem_sorteada = 0
+basic.forever(function () {
     if (imagem_sorteada == 0) {
     	
     }
+})
+```
+1. Agora já temos tudo preparado para colocar as imagens que serão apresentadas de acordo com o número sorteado.
+1. Altere o primeiro o ```||logic:se||``` para que tenha o valor ```||logic:1||```. 
+Dentro dele use o bloco ```||basic:mostrar leds||```, que fica no grupo ```||basic:Básico||```, para apresentar a imagem do coração. 
+Na sequência, ao final do bloco ```||logic:se||```, coloque um ```||basic:mostrar leds||``` para que o coração fique piscando.
+
+```blocks
+let imagem_sorteada = 0
+basic.forever(function () {
+    if (imagem_sorteada == 1) {
+        basic.showLeds(`
+            . # . # .
+            # # # # #
+            # # # # #
+            . # # # .
+            . . # . .
+            `)
+    }
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
 })
 ```
