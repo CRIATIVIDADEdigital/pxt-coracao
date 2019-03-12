@@ -58,6 +58,7 @@ basic.forever(function() {
 Após a alteração veja como ficou o jogo usando o simulador ou baixando a nova versão do código no seu Micro:bit.
 
 Agora, dê asas a sua imaginação.
+
 Você pode fazer uma carinha triste:
 ```blocks
     basic.showLeds(`
@@ -76,4 +77,14 @@ Uma "caveira":
         # # # # #
         . # # # .
         . # # # .`);
+```
+
+Uma "seta para a direita":
+```blocks
+        . . . . .
+        . . . # .
+        # # # # #
+        . . . # .
+        . . . . .
+        `);
 ```
