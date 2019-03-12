@@ -210,5 +210,5 @@ Por exemplo, quem tirar coração vale 5 pontos. Se tirar uma carinha feliz ganh
 E, claro, agora que já sabe como alterar o programa, você pode criar as suas próprias imagens e regras de sorteio.
 
 ## Créditos
-Esta atividade foi criado pelo [APRENDER.digital](https://aprender.digital) usando como base o código do [Flashing Heart](https://makecode.microbit.org/projects/crashy-bird).
+Esta atividade foi criado pelo [APRENDER.digital](https://aprender.digital) usando como base o código do [Flashing Heart](https://makecode.microbit.org/projects/flashing-heart).
   
