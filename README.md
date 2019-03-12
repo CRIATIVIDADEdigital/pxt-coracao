@@ -101,6 +101,13 @@ que identifica automaticamente que a placa do Micro:bit foi movimentada,
 e depois o ```||math:escolher aleatório||``` para sortear qual imagem vai ser apresenta. 
 
 Acompanhe os passos abaixo.
+
+```blocks
+input.onGesture(Gesture.Shake, function () {
+imagem_sorteada = Math.randomRange(1, 3)
+});
+```
+
 1. Coloque o bloco ```||input:em agitar||``` na área de programação. Ele está disponível no grupo ```||input:Entrada||```.
 1. Fazendo o sorteio da imagem
     1. Crie uma variável chamada ```||variable:imagem sorteada||```. Você faz isso por meio do grupo ```||variable:Variáveis||```.
@@ -109,11 +116,7 @@ Acompanhe os passos abaixo.
     1. Altere os parâmetros para que seja sorteado um número de ```||math:1||``` até ```||math:3||```.
     1. O código vai ficar assim:
 
-```blocks
-    input.onGesture(Gesture.Shake, function () {
-    imagem_sorteada = Math.randomRange(1, 3)
-    });
-```
+
 
 1. Verificando o número sorteado para definir a imagem a ser apresentada.
    1. Agora que já temos a imagem escolhida guardado na variável ```||variable:imagem sorteada||```, 
