@@ -55,7 +55,7 @@ basic.forever(function() {
         . . . . .`);
 })
 ```
-Após a alteração veja como ficou o jogo usando o simulador ou baixando a nova versão do código no seu Micro:bit.
+Após a alteração veja como ficou o programa usando o simulador ou baixando a nova versão do código no seu Micro:bit.
 
 Agora, dê asas a sua imaginação.
 
@@ -89,7 +89,7 @@ Uma "seta para a direita":
         . . . . .`);
 ```
 
-## Gerando uma imagem surpresa
+## Sorteando uma imagem
 Podemos usar os recursos do Micro:bit para fazer uma brincadeira em que, ao sacudi-lo, 
 o Micro:bit apresenta automaticamente uma imagem diferente.
 
@@ -135,8 +135,8 @@ basic.forever(function () {
 ```
 Pronto! Já temos tudo preparado para colocar as imagens que serão apresentadas de acordo com o número sorteado. Então vamos lá...
 1. Altere o primeiro o ```||logic:se||``` para que tenha o valor ```||logic:1||```. 
-Dentro dele use o bloco ```||basic:mostrar leds||```, que fica no grupo ```||basic:Básico||```, para apresentar a imagem do coração. 
-Na sequência, ao final do bloco ```||logic:se||```, coloque um ```||basic:mostrar leds||``` para que o coração fique piscando.
+1. Dentro do ```||logic:se||``` use o bloco ```||basic:mostrar leds||```, que fica no grupo ```||basic:Básico||```, para apresentar a imagem do coração. 
+1. Na sequência, ao final do bloco ```||logic:se||```, coloque um ```||basic:mostrar leds||``` para que o coração fique piscando.
 
 ```blocks
 let imagem_sorteada = 0
@@ -205,8 +205,10 @@ basic.forever(function () {
 })
 ```
 Após a alteração veja como ficou a brincadeira usando o simulador ou baixando a nova versão do código no seu Micro:bit.
+
 Você pode usar este programa e o Micro:bit para brincar com a turma. Ele pode ser a função de um "dado" em um jogo. 
-Por exemplo, quem tirar coração vale 5 pontos. Se tirar uma carinha feliz ganha somente 1. Carinha triste não dá ponto nenhum... 
+Por exemplo, quem tirar coração vale 5 pontos. Se tirar uma carinha feliz ganha somente 1. Carinha triste não dá ponto nenhum...
+
 E, claro, agora que já sabe como alterar o programa, você pode criar as suas próprias imagens e regras de sorteio.
 
 ## Créditos
