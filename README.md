@@ -170,7 +170,7 @@ Veja o resultado no trecho de código abaixo. Se for sorteado o número ```||log
 se for sorteado o número ```||logic:2||``` apresentamos um "sorriso". 
 Se for o número ```||logic:3||``` apresentamos uma "carinha triste".  
 
-[Veja o resultado](https://youtu.be/DXEgQ9iTP_g?t=17m23s) final desta programação.
+[Veja o resultado](https://youtu.be/DXEgQ9iTP_g?t=19m55s) final desta programação.
 ```blocks
 let imagem_sorteada = 0
 basic.forever(function () {
@@ -210,12 +210,12 @@ basic.forever(function () {
         `)
 })
 ```
-Após a alteração veja como ficou a brincadeira usando o simulador ou baixando a nova versão do código no seu Micro:bit.
+Após a alteração veja como ficou a brincadeira [usando o simulador](https://youtu.be/DXEgQ9iTP_g?t=20m28s) ou [baixando a nova versão do código](https://youtu.be/DXEgQ9iTP_g?t=21m39s) no seu Micro:bit.
 
-Você pode usar este programa e o Micro:bit para brincar com a turma. Ele pode ser a função de um "dado" em um jogo. 
-Por exemplo, quem tirar coração vale 5 pontos. Se tirar uma carinha feliz ganha somente 1. Carinha triste não dá ponto nenhum...
+[Você pode usar este programa](https://youtu.be/DXEgQ9iTP_g?t=22m50s) e o Micro:bit para brincar com a turma. Ele pode ser a função de um "dado" em um jogo. 
+[Por exemplo](https://youtu.be/DXEgQ9iTP_g?t=24m02s), quem tirar coração vale 5 pontos. Se tirar uma carinha feliz ganha somente 1. Carinha triste não dá ponto nenhum...
 
-E, claro, agora que já sabe como alterar o programa, você pode criar as suas próprias imagens e regras de sorteio.
+E, claro, agora que já sabe como alterar o programa, [você pode criar](https://youtu.be/DXEgQ9iTP_g?t=24m21s) as suas próprias imagens e regras de sorteio.
 
 ## Créditos
 Esta atividade foi criado pelo [APRENDER.digital](https://aprender.digital) usando como base o código do [Flashing Heart](https://makecode.microbit.org/projects/flashing-heart).
