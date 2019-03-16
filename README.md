@@ -126,9 +126,9 @@ vamos utilizar o valor escolhido (ou sorteado) para definir qual imagem o Micro:
 Usaremos o *loop* infinito ```||basic:sempre||``` para incluir a verificação de qual imagem deve ser apresentada.
 1. [Primeiro vamos retirar todos os blocos](https://youtu.be/DXEgQ9iTP_g?t=13m04s) que estiverem dentro do ```||basic:sempre||``` para programarmos o controle do zero.
 1. [Para controlar](https://youtu.be/DXEgQ9iTP_g?t=13m26s) qual imagem será apresentada, utilizaremos o bloco condicional ```||logic:se verdadeiro então||``` e de comparação ```||logic:0 = 0||```.  
-1. [Vá até o grupo](https://youtu.be/DXEgQ9iTP_g?t=14m43s) ```||logic:Lógica||``` e arraste o bloco ```||logic:se verdadeiro então||``` para dentro do *loop* ```||basic:sempre||```.
-1. Ainda usando o grupo ```||logic:Lógica||``` arraste o bloco ```||logic:0 = 0||``` sobre o ```||logic:verdadeiro||```. 
-1. No grupo ```||variable:Variáveis||``` pegue o bloco ```||variable:imagem sorteada||``` e arraste sobre o primeiro ```||logic:0||``` do bloco ```||logic:se 0 = 0 então||```.
+1. Vá até o grupo ```||logic:Lógica||``` e arraste o bloco ```||logic:se verdadeiro então||``` para dentro do *loop* ```||basic:sempre||```.
+1. [Ainda usando o grupo](https://youtu.be/DXEgQ9iTP_g?t=14m19s)  ```||logic:Lógica||``` arraste o bloco ```||logic:0 = 0||``` sobre o ```||logic:verdadeiro||```. 
+1. [No grupo](https://youtu.be/DXEgQ9iTP_g?t=14m44s)  ```||variable:Variáveis||``` pegue o bloco ```||variable:imagem sorteada||``` e arraste sobre o primeiro ```||logic:0||``` do bloco ```||logic:se 0 = 0 então||```.
 1. O código vai ficar assim:
 
 ```blocks
