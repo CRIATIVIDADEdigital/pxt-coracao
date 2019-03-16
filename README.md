@@ -96,24 +96,24 @@ Uma ["seta para a direita"](https://youtu.be/DXEgQ9iTP_g?t=8m16s):
 ```
 
 ## Sorteando uma imagem
-Podemos usar os recursos do Micro:bit para fazer uma brincadeira em que, ao sacudi-lo, 
+[Podemos usar os recursos](https://youtu.be/DXEgQ9iTP_g?t=8m33s) do Micro:bit para fazer uma brincadeira em que, ao sacudi-lo, 
 o Micro:bit apresenta automaticamente uma imagem diferente.
 
-Para programar esta funcionalidade, vamos utilizar o *acelerometro* disponível no Micro:bit. 
+Para programar esta funcionalidade, vamos [utilizar o *acelerometro*](https://youtu.be/DXEgQ9iTP_g?t=8m46s) disponível no Micro:bit. 
 Ele é capaz de medir um movimento aplicada à placa.  
 
 Faremos isso usando dois blocos disponíveis para programação. Primeiro o ```||input:em agitar||```, 
 que identifica automaticamente que a placa do Micro:bit foi movimentada, 
 e depois o ```||math:escolher aleatório||``` para sortear qual imagem vai ser apresenta. 
 
-Acompanhe os passos abaixo.
+[Acompanhe os passos](https://youtu.be/DXEgQ9iTP_g?t=9m34s) abaixo.
 
 Primeiro vamos construir o trecho do programa que vai controlar o processo de sorteio da imagem.
-1. Coloque o bloco ```||input:em agitar||``` na área de programação. Ele está disponível no grupo ```||input:Entrada||```.
-1. Crie uma variável chamada ```||variable:imagem sorteada||```. Você faz isso por meio do grupo ```||variable:Variáveis||```.
-1. Ainda usando o grupo ```||variable:Variáveis||``` arraste para dentro do ```||input:em agitar||``` o bloco ```||variable:definir imagem sorteada para||```.
-1. Vá até o grupo ```||math:Matemática||``` e arraste o bloco ```||math:escolher aleatório||``` em cima do número ```||variable:0||``` presente na variável ```||variable:imagem sorteada||```.
-1. Altere os parâmetros para que seja sorteado um número de ```||math:1||``` até ```||math:3||```.
+1. [Coloque o bloco](https://youtu.be/DXEgQ9iTP_g?t=9m41s) ```||input:em agitar||``` na área de programação. Ele está disponível no grupo ```||input:Entrada||```.
+1. [Crie uma variável](https://youtu.be/DXEgQ9iTP_g?t=10m02s) chamada ```||variable:imagem sorteada||```. Você faz isso por meio do grupo ```||variable:Variáveis||```.
+1. [Ainda usando](https://youtu.be/DXEgQ9iTP_g?t=10m32s) o grupo ```||variable:Variáveis||``` arraste para dentro do ```||input:em agitar||``` o bloco ```||variable:definir imagem sorteada para||```.
+1. [Vá até o grupo](https://youtu.be/DXEgQ9iTP_g?t=11m07s) ```||math:Matemática||``` e arraste o bloco ```||math:escolher aleatório||``` em cima do número ```||variable:0||``` presente na variável ```||variable:imagem sorteada||```.
+1. [Altere os parâmetros](https://youtu.be/DXEgQ9iTP_g?t=11m59s) para que seja sorteado um número de ```||math:1||``` até ```||math:3||```.
 1. O código vai ficar assim:
 
 ```blocks
@@ -121,12 +121,12 @@ Primeiro vamos construir o trecho do programa que vai controlar o processo de so
     let imagem_sorteada = Math.randomRange(1, 3)
 })
 ```
-Agora que já temos a imagem escolhida guardada na variável ```||variable:imagem sorteada||```,
+[Agora que já temos](https://youtu.be/DXEgQ9iTP_g?t=12m31s) a imagem escolhida guardada na variável ```||variable:imagem sorteada||```,
 vamos utilizar o valor escolhido (ou sorteado) para definir qual imagem o Micro:bit deverá apresentar. 
 Usaremos o *loop* infinito ```||basic:sempre||``` para incluir a verificação de qual imagem deve ser apresentada.
-1. Primeiro vamos retirar todos os blocos que estiverem dentro do ```||basic:sempre||``` para programarmos o controle do zero.
-1. Para controlar qual imagem será apresentada, utilizaremos o bloco condicional ```||logic:se verdadeiro então||``` e de comparação ```||logic:0 = 0||```.  
-1. Vá até o grupo ```||logic:Lógica||``` e arraste o bloco ```||logic:se verdadeiro então||``` para dentro do *loop* ```||basic:sempre||```.
+1. [Primeiro vamos retirar todos os blocos](https://youtu.be/DXEgQ9iTP_g?t=13m04s) que estiverem dentro do ```||basic:sempre||``` para programarmos o controle do zero.
+1. [Para controlar](https://youtu.be/DXEgQ9iTP_g?t=13m26s) qual imagem será apresentada, utilizaremos o bloco condicional ```||logic:se verdadeiro então||``` e de comparação ```||logic:0 = 0||```.  
+1. [Vá até o grupo](https://youtu.be/DXEgQ9iTP_g?t=14m43s) ```||logic:Lógica||``` e arraste o bloco ```||logic:se verdadeiro então||``` para dentro do *loop* ```||basic:sempre||```.
 1. Ainda usando o grupo ```||logic:Lógica||``` arraste o bloco ```||logic:0 = 0||``` sobre o ```||logic:verdadeiro||```. 
 1. No grupo ```||variable:Variáveis||``` pegue o bloco ```||variable:imagem sorteada||``` e arraste sobre o primeiro ```||logic:0||``` do bloco ```||logic:se 0 = 0 então||```.
 1. O código vai ficar assim:
@@ -140,9 +140,9 @@ basic.forever(function () {
 })
 ```
 Pronto! Já temos tudo preparado para colocar as imagens que serão apresentadas de acordo com o número sorteado. Então vamos lá...
-1. Altere o primeiro o ```||logic:se||``` para que tenha o valor ```||logic:1||```. 
-1. Dentro do ```||logic:se||``` use o bloco ```||basic:mostrar leds||```, que fica no grupo ```||basic:Básico||```, para apresentar a imagem do coração. 
-1. Na sequência, ao final do bloco ```||logic:se||```, coloque um ```||basic:mostrar leds||``` para que o coração fique piscando.
+1. [Altere o primeiro](https://youtu.be/DXEgQ9iTP_g?t=15m25s) ```||logic:se||``` para que tenha o valor ```||logic:1||```. 
+1. [Dentro do](https://youtu.be/DXEgQ9iTP_g?t=15m44s) ```||logic:se||``` use o bloco ```||basic:mostrar leds||```, que fica no grupo ```||basic:Básico||```, para apresentar a imagem do coração. 
+1. [Na sequência](https://youtu.be/DXEgQ9iTP_g?t=16m21s), ao final do bloco ```||logic:se||```, coloque um ```||basic:mostrar leds||``` para que o coração fique piscando.
 
 ```blocks
 let imagem_sorteada = 0
@@ -165,12 +165,12 @@ basic.forever(function () {
         `)
 })
 ```
-Para acrescentar as próximas imagens vamos repetir o processo acima, ou seja, acrescentar um bloco ```||logic:se||``` para cada imagem. 
+[Para acrescentar as próximas imagens](https://youtu.be/DXEgQ9iTP_g?t=17m02s) vamos repetir o processo acima, ou seja, acrescentar um bloco ```||logic:se||``` para cada imagem. 
 Veja o resultado no trecho de código abaixo. Se for sorteado o número ```||logic:1||``` apresentamos um coração, 
 se for sorteado o número ```||logic:2||``` apresentamos um "sorriso". 
 Se for o número ```||logic:3||``` apresentamos uma "carinha triste".  
 
-Veja o resultado final desta programação.
+[Veja o resultado](https://youtu.be/DXEgQ9iTP_g?t=17m23s) final desta programação.
 ```blocks
 let imagem_sorteada = 0
 basic.forever(function () {
