@@ -4,16 +4,22 @@
 
 Este programa faz com que os LEDs do Micro:bit pisquem a forma de um coração.  
 
+## ~avatar
+
+Qualquer dúvida na construção, use o **link (texto azul)** para abrir o vídeo que apresenta como realizar aquele passo. Para acessar o vídeo com o tutorial completo, use [**este link**](https://youtu.be/DXEgQ9iTP_g).
+
+## ~
+
 ## Como funciona
-1. Baixe o programa no seu computador.
-1. Conecte o Micro:bit e transfira o arquivo HEX.
+1. [Baixe](https://youtu.be/DXEgQ9iTP_g?t=1m41s) o programa no seu computador.
+1. [Conecte](https://youtu.be/DXEgQ9iTP_g?t=2m10s) o Micro:bit e [transfira](https://youtu.be/DXEgQ9iTP_g?t=2m51s) o arquivo HEX.
 1. Ao término da transferência, o programa iniciará automaticamente em seu Micro:bit.
 
 ## Sugestões de modificação
 Quer experimentar modificar este programa? Então, confira as sugestões apresentadas abaixo.
 
 ## Trocando o coração por um emoji
-O programa funciona por meio de um *loop* (ou repetição) infinito em que o bloco  ``||basic:mostrar leds||`` primeiro apresenta a imagem de um coração. 
+[O programa funciona](https://youtu.be/DXEgQ9iTP_g?t=5m29s) por meio de um *loop* (ou repetição) infinito em que o bloco  ``||basic:mostrar leds||`` primeiro apresenta a imagem de um coração. 
 Em seguida ele é substituído por uma "imagem vazia". 
 
 Veja abaixo.
@@ -36,9 +42,9 @@ basic.forever(function() {
 })
 ```
 
-Para alterar a imagem apresentada na matriz de LEDs do Micro:bit, temos que alterar o conjunto de LEDs dentro do bloco ``||basic:mostrar leds||``.
+[Para alterar a imagem apresentada](https://youtu.be/DXEgQ9iTP_g?t=6m01s) na matriz de LEDs do Micro:bit, temos que alterar o conjunto de LEDs dentro do bloco ``||basic:mostrar leds||``.
 
-Por exemplo, experimente trocar o coração por um *smile*. 
+Por exemplo, [experimente trocar o coração](https://youtu.be/DXEgQ9iTP_g?t=6m29s) por um *smile*. 
 ```blocks
 basic.forever(function() {
     basic.showLeds(`
@@ -55,11 +61,11 @@ basic.forever(function() {
         . . . . .`);
 })
 ```
-Após a alteração veja como ficou o programa usando o simulador ou baixando a nova versão do código no seu Micro:bit.
+Após a alteração veja como ficou o programa [usando o simulador](https://youtu.be/DXEgQ9iTP_g?t=6m51s) ou baixando a nova versão do código no seu Micro:bit.
 
 Agora, dê asas a sua imaginação.
 
-Você pode fazer uma carinha triste:
+Você pode fazer uma [carinha triste](https://youtu.be/DXEgQ9iTP_g?t=7m30s):
 ```blocks
     basic.showLeds(`
         . . . . .
@@ -69,7 +75,7 @@ Você pode fazer uma carinha triste:
         # . . . #`);
 ```
 
-Uma "caveira":
+Uma ["caveira"](https://youtu.be/DXEgQ9iTP_g?t=7m54s):
 ```blocks
    basic.showLeds(`
         . # # # .
@@ -79,7 +85,7 @@ Uma "caveira":
         . # # # .`);
 ```
 
-Uma "seta para a direita":
+Uma ["seta para a direita"](https://youtu.be/DXEgQ9iTP_g?t=8m16s):
 ```blocks
    basic.showLeds(`
         . . . . .
