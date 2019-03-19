@@ -100,7 +100,7 @@ Uma ["seta para a direita"](https://youtu.be/DXEgQ9iTP_g?t=8m16s):
 o Micro:bit apresenta automaticamente uma imagem diferente.
 
 Para programar esta funcionalidade, vamos [utilizar o *acelerometro*](https://youtu.be/DXEgQ9iTP_g?t=8m46s) disponível no Micro:bit. 
-Ele é capaz de medir um movimento aplicada à placa.  
+Ele é capaz de medir um movimento aplicado à placa.  
 
 Faremos isso usando dois blocos disponíveis para programação. Primeiro o ```||input:em agitar||```, 
 que identifica automaticamente que a placa do Micro:bit foi movimentada, 
@@ -218,5 +218,5 @@ Após a alteração veja como ficou a brincadeira [usando o simulador](https://y
 E, claro, agora que já sabe como alterar o programa, [você pode criar](https://youtu.be/DXEgQ9iTP_g?t=24m21s) as suas próprias imagens e regras de sorteio.
 
 ## Créditos
-Esta atividade foi criado pelo [APRENDER.digital](https://aprender.digital) usando como base o código do [Flashing Heart](https://makecode.microbit.org/projects/flashing-heart).
+Esta atividade foi criada pelo [CRIATIVIDADE.digital](https://criatividade.digital) usando como base o código do [Flashing Heart](https://makecode.microbit.org/projects/flashing-heart).
   
